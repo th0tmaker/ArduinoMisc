@@ -28,7 +28,7 @@ As far as wiring was concerned, the project uses a parallel communication interf
 
 2. VDD: (+5V) - This pin is connected to a 5V power source.
 
-3. V0: (Contrast) - This pin is connected to the middle pin (wiper) o a potentiometer (variable resistor) to adjust the contrast of the display.
+3. V0: (Contrast) - This pin is connected to the middle pin (wiper) on a potentiometer (variable resistor) to adjust the contrast of the display.
 
 4. RS: (Register Select) - This pin is connected to a digital pin in order to select between the data register (when RS=0) and the command register (when RS=1).
 
