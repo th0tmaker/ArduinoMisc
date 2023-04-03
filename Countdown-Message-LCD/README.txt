@@ -16,7 +16,11 @@ Circuit components:
 
 Description:
 
-This project uses the Arduino Uno and its corresponding language to showcase the program's output on an Alphanumeric, 16x2, dot-matric LCD screen. The code sets up timer starting at 30 seconds and starts counting down until it reaches 0. During the countdown, the red LED lights toggles through different states (either OFF, ON or BLINKING). Once the timer reaches zero the red LED turns OFF, while the green LED turns ON. As the green LED turns on, the LCD displays a pre-programmed message on the screen and starts scrolling it to the right every by one character space every 0.5 seconds. Once the message scrolls all the way off the screen, the program restarts back at the beginning.
+This project uses the Arduino Uno and its corresponding language to showcase the program's output on an Alphanumeric, 16x2, dot-matric LCD screen.
+The code sets up timer starting at 30 seconds and starts counting down until it reaches 0.
+During the countdown, the red LED lights toggles through different states (either OFF, ON or BLINKING).
+Once the timer reaches zero the red LED turns OFF, while the green LED turns ON.
+As the green LED turns on, the LCD displays a pre-programmed message on the screen and starts scrolling it to the right every by one character space every 0.5 seconds. Once the message scrolls all the way off the screen, the program restarts back at the beginning.
 
 As far as wiring was concerned, the project uses a parallel communication interface, meaning several wires have to be connected to their designated pins on the LCD module. Here's an overview of the wiring in an enumerated list format:
 
@@ -38,8 +42,15 @@ As far as wiring was concerned, the project uses a parallel communication interf
 
 9. K: (Cathode) - This pin is also used to control the backlight of the LCD module. Connect it to ground.
 
-After connecting the LCD, LEDs, and potentiometer, the code includes the <LiquidCrystal.h> library for working with the LCD display. Then, the pins connected from the LCD to the Arduino (RS, E, D4, D5, D6, D7) are defined, and initial values are set for the timer, intervals, and LED states. In the setup function, the LED pins are initialized as output pins.
+After connecting the LCD, LEDs, and potentiometer, the code includes the <LiquidCrystal.h> library for working with the LCD display.
+Then, the pins connected from the LCD to the Arduino (RS, E, D4, D5, D6, D7) are defined, and initial values are set for the timer, intervals, and LED states.
+In the setup function, the LED pins are initialized as output pins.
 
-In the loop function, the program initializes the LCD display and prints the countdown timer value. It then checks the current value of the timer and updates the state of the red LED accordingly. If the timer value is between 20 and 10, the red LED is set to ON. If the timer value is between 10 and 0, the red LED is set to BLINKING. When the timer value is equal to 0, the red LED is set to OFF, and the green LED is turned ON. A message is displayed on the LCD screen in this state, before circling back to the start of the loop. This program will run continously while the power is on. 
+In the loop function, the program initializes the LCD display and prints the countdown timer value.
+It then checks the current value of the timer and updates the state of the red LED accordingly. If the timer value is between 20 and 10, the red LED is set to ON.
+If the timer value is between 10 and 0, the red LED is set to BLINKING.
+When the timer value is equal to 0, the red LED is set to OFF, and the green LED is turned ON.
+A message is displayed on the LCD screen in this state, before circling back to the start of the loop.
+This program will run continously while the power is on. 
 
 The aim of this project was to specifically highlight the LCD component and it's usage in conjunction with a functioning timer while executing various LED operations simultaneously through the code's control flow as the timer counts down.
