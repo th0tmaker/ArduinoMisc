@@ -27,23 +27,23 @@ Rth = (Vout * Rfix) / (Vin - Vout)
 
       +5V
        |
-	 |
-      | |
-	| |Rfix       
-      |_|	
-	 |    
        |
-	 |
+      | |
+      | | Rfix       
+      |_|	
+       |    
+       |
+       |
        o-------- Vout (Analog input)
-	 |
-	 |
+       |
+       |
      | |
      \| |
-	|\|Rth (Thermistor)       
+      |\| Rth (Thermistor)       
       |_|\	
-	 |
-	 |      
-	GND
+       |
+       |      
+      GND
 
 
 Voltage Divider Circuit (Rfix connected to GND):
@@ -56,21 +56,21 @@ Rth = Rfix * (Vin / Vout - 1)
        |
      | |
      \| |
-	|\|Rth (Thermistor)       
+      |\| Rth (Thermistor)       
       |_|\	
-	 |    
+       |    
        |
-	 |
+       |
        o-------- Vout (Analog input)
-	 |
-	 |
-     	 |
+       |
+       |
+       |
       | |
-	| |Rfix    
+      | | Rfix    
       |_|	
-	 |
-	 |      
-	GND
+       |
+       |      
+      GND
 
 
 Description:
